@@ -279,6 +279,7 @@ header .home-header .inner .right .imgbox
     overflow: hidden;
     border-radius: 50%;
     border: 6px solid white;
+    min-width: 500px;
 }
 header .home-header .inner .right .imgbox img 
 {
