@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(){
+
+    const menuFunc = () => {
+        var menuBtn = document.querySelector('.menu');
+        menuBtn.classList.toggle('active');
+    }
+    
     return (
         <>
             <nav class="nav">
@@ -32,7 +38,7 @@ export default function Navbar(){
                                 </li>
                             </ul>
 
-                            <div class="menu">
+                            <div class="menu" onClick={menuFunc}>
 
                             </div>
                         </div>
