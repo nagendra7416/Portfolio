@@ -289,7 +289,12 @@ header .home-header .inner .right .imgbox img
 
 
 
-
+@media (min-width: 1370px){
+    header .home-header .inner
+    {
+        width: 60%;
+    }
+}
 @media (max-width: 1370px){
     header .home-header .inner
     {
