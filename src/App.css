@@ -266,6 +266,9 @@ header .home-header .inner .right
 {
     width: 40%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
