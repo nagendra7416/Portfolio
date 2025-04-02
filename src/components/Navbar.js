@@ -19,20 +19,20 @@ export default function Navbar(){
     
     return (
         <>
-            <nav class="nav">
-                <div class="inner">
-                    <div class="left">
-                        <div class="logo">
+            <nav className="nav">
+                <div className="inner">
+                    <div className="left">
+                        <div className="logo">
                             <h2>
                                 <NavLink to='/'>Nagendra Babu</NavLink>
                             </h2>
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="links">
+                    <div className="right">
+                        <div className="links">
                             <ul>
                                 <li>
-                                    <NavLink to='/'>Education</NavLink>
+                                    <NavLink to='/education'>Education</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to='/'>Experience</NavLink>
@@ -48,7 +48,7 @@ export default function Navbar(){
                                 </li>
                             </ul>
 
-                            <div class="menu" onClick={menuFunc}>
+                            <div className="menu" onClick={menuFunc}>
 
                             </div>
                         </div>
@@ -56,26 +56,26 @@ export default function Navbar(){
                 </div>
             </nav>
 
-            <div class="menuCon">
-                <div class="menuInner">
-                    <div class="top">
+            <div className="menuCon">
+                <div className="menuInner">
+                    <div className="top">
                         <span onClick={menuConFunc}></span>
                     </div>
                     <ul>
                         <li>
-                            <a href="#">Education</a>
+                            <NavLink to='/education'>Education</NavLink>
                         </li>
                         <li>
-                            <a href="#">Experience</a>
+                            <NavLink to='/'>Experience</NavLink>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <NavLink to='/'>Projects</NavLink>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <NavLink to='/'>About</NavLink>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <NavLink to='/'>Contact</NavLink>
                         </li>
                     </ul>
                 </div>

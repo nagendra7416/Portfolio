@@ -405,6 +405,10 @@ header .home-header .inner .right .imgbox img
     background: white;
     z-index: 10000;
 }
+.loader.active 
+{
+    display: none;
+}
 .loader span 
 {
     width: 35px;
@@ -505,4 +509,27 @@ align-items: center;
     font-size: 19px;
     text-decoration: none;
     color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+header .education-header 
+{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+header .education-header .inner 
+{
+    width: 95%;
 }
