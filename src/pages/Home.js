@@ -10,7 +10,7 @@ export default function Home(){
                 <div class="home-header">
                     <div class="inner">
                         <div class="left">
-                            <h2>Nagendra Babu Mekapothula</h2>
+                            <h2 data-aos="fade-up">Nagendra Babu Mekapothula</h2>
                             <h4>Software Engineer & Quality Engineer</h4>
                             <p>📍 Hyderabad, Telangana, India</p>
                             <div class="social-links">
