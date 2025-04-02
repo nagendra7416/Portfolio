@@ -1,9 +1,9 @@
 export default function Loader(){
     return (
         <>
-            <div class="loader">
+            {/* <div class="loader">
                 <span></span>
-            </div>
+            </div> */}
         </>
     )
 }
