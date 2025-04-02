@@ -404,10 +404,14 @@ header .home-header .inner .right .imgbox img
     left: 0;
     background: white;
     z-index: 10000;
+
+    visibility: hidden;
+    opacity: 0;
 }
 .loader.active 
 {
-    display: none;
+    visibility: visible;
+    opacity: 1;
 }
 .loader span 
 {
