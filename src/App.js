@@ -6,6 +6,9 @@ import About from './pages/About';
 export default function App(){
     return (
         <>
+            <div class="loader">
+                <span></span>
+            </div>
             <Routes>
                 <Route exact path='/' element={<Home />}></Route>
                 <Route exact path='/about' element={<About />}></Route>

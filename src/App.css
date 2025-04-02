@@ -386,3 +386,122 @@ header .home-header .inner .right .imgbox img
         display: flex;
     }
 }
+
+
+
+
+
+
+.loader 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+.loader span 
+{
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+}
+@keyframes spin {
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+.menuCon
+{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    background: white;
+    transition: .3s;
+}
+.menuCon.active 
+{
+    top: 0;
+    transition: .3s;
+}
+.menuCon .menuInner 
+{
+    width: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.menuCon .menuInner .top 
+{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuCon .menuInner .top span
+{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menuCon .menuInner .top span::before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background: black;
+    transform: rotate(45deg);
+}
+.menuCon .menuInner .top span::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background: black;
+    transform: rotate(-45deg);
+}
+.menuCon .menuInner ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.menuCon .menuInner ul li 
+{
+    margin: 15px 0;
+}
+.menuCon .menuInner ul li a 
+{
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}

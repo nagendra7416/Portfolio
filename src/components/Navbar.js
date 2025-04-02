@@ -1,11 +1,21 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(){
 
     const menuFunc = () => {
-        var menuBtn = document.querySelector('.menu');
-        menuBtn.classList.toggle('active');
+        var menuBtn = document.querySelector('.menuCon');
+        menuBtn.classList.add('active');
     }
+
+    const menuConFunc = () => {
+        const menu = document.querySelector('.menuCon');
+        menu.classList.remove('active');
+    }
+
+    useEffect(() => {
+
+    }, [])
     
     return (
         <>
@@ -45,6 +55,31 @@ export default function Navbar(){
                     </div>
                 </div>
             </nav>
+
+            <div class="menuCon">
+                <div class="menuInner">
+                    <div class="top">
+                        <span onClick={menuConFunc}></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Education</a>
+                        </li>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }
