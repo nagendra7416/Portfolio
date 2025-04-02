@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
 *
@@ -536,4 +537,54 @@ header .education-header
 header .education-header .inner 
 {
     width: 95%;
+}
+header .education-header .inner .head
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+header .education-header .inner .head h2 
+{
+    font-size: 32px;
+    font-family: 'Playfair Display', sans-serif;
+    position: relative;
+    padding: 10px 0;
+}
+header .education-header .inner .head h2::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    height: 1.5px;
+    background: black;
+}
+header .education-header .inner .head label 
+{
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: .2px;
+}
+
+header .education-header .inner .headCon 
+{
+    width: 100%;
+}
+header .education-header .inner .eduCon .eduInner
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 20px;
+} 
+header .education-header .inner .eduCon .eduInner .education 
+{
+    background: white;
 }
