@@ -6,6 +6,7 @@ import Loader from './components/Loader';
 import Education from './pages/Education';
 import { Analytics } from '@vercel/analytics/react';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 
 export default function App(){
@@ -22,6 +23,7 @@ export default function App(){
                 <Route exact path='/' element={<Home />}></Route>
                 <Route exact path='/experience' element={<Experience />}></Route>
                 <Route exact path='/education' element={<Education />}></Route>
+                <Route exact path='/projects' element={<Projects />}></Route>
                 <Route exact path='/about' element={<About />}></Route>
             </Routes>
         </>

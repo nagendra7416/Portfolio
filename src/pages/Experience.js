@@ -50,6 +50,25 @@ export default function Experience(){
                                 </div>
                             </div>
                         </div> */}
+
+                        <div className="eduCon" style={{display: 'flex', justifyContent: 'center'}}>
+                            <div className="expInner">
+                                <div className="company">
+                                    <div className="experience exp1">
+                                        <h2>LTIMindtree</h2>
+                                        <div className="block block1">
+                                            <span>Quality Engineer</span>
+                                            <label>Sep 2022 - Present (2 years)</label>
+                                            <p>Worked as a Quality Engineer and involved in various frameworks built in the Internal Archetecture.</p>
+                                        </div>
+                                        <div className="block block2">
+                                            <span>SDET Trainee</span>
+                                            <label>Feb 2022 - September 2022 (7months)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>

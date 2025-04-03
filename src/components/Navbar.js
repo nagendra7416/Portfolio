@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar(){
+    const location = useLocation();
 
     const menuFunc = () => {
         var menuBtn = document.querySelector('.menuCon');
@@ -25,6 +26,26 @@ export default function Navbar(){
     useEffect(() => {
 
     }, [])
+
+    const element = document.querySelector('.menuCon');
+    const mediaQuery = window.matchMedia("(min-width: 800px)");
+
+    function handleMediaChange(e) {
+        if(element){
+            if (e.matches) {
+                element.classList.remove("active");
+            }
+        }
+      }
+      mediaQuery.addEventListener("change", handleMediaChange);
+      handleMediaChange(mediaQuery);
+
+
+      const isHomePage = location.pathname === `/`;
+      const isEducationPage = location.pathname === `/education`;
+      const isExperiencePage = location.pathname === `/experience`;
+      const isProjectPage = location.pathname === `/projects`;
+      const isAboutPage = location.pathname === `/about`;
     
     return (
         <>
@@ -40,16 +61,16 @@ export default function Navbar(){
                     <div className="right">
                         <div className="links">
                             <ul>
-                                <li>
+                                <li className={isEducationPage ? 'active':''}>
                                     <NavLink to='/education'>Education</NavLink>
                                 </li>
-                                <li>
+                                <li className={isExperiencePage ? 'active':''}>
                                     <NavLink to='/experience'>Experience</NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to='/'>Projects</NavLink>
+                                <li className={isProjectPage ? 'active':''}>
+                                    <NavLink to='/projects'>Projects</NavLink>
                                 </li>
-                                <li>
+                                <li className={isAboutPage ? 'active':''}>
                                     <NavLink to='/'>About</NavLink>
                                 </li>
                                 <li>
@@ -71,16 +92,16 @@ export default function Navbar(){
                         <span onClick={menuConFunc}></span>
                     </div>
                     <ul>
-                        <li>
+                        <li className={isEducationPage ? 'active':''}>
                             <NavLink to='/education'>Education</NavLink>
                         </li>
-                        <li>
+                        <li className={isExperiencePage ? 'active':''}>
                             <NavLink to='/experience'>Experience</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/'>Projects</NavLink>
+                        <li className={isProjectPage ? 'active':''}>
+                            <NavLink to='/projects'>Projects</NavLink>
                         </li>
-                        <li>
+                        <li className={isAboutPage ? 'active':''}>
                             <NavLink to='/'>About</NavLink>
                         </li>
                         <li>

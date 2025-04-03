@@ -103,6 +103,10 @@ nav .inner .right .links ul li a:hover:before
     width: 70%;
     transition: .5s;
 }
+nav .inner .right .links ul li.active a::before
+{
+    width: 70%;
+}
 
 
 nav .inner .right .links .menu 
@@ -554,7 +558,9 @@ header .education-header .inner .head
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 50px;
+    position: relative;
 }
+
 header .education-header .inner .head h2 
 {
     font-size: 32px;
@@ -610,7 +616,7 @@ header .education-header .inner .eduCon .eduInner .education
 header .education-header .inner .eduCon .eduInner .education:hover 
 {
     transition: .3s;
-    transform: translateY(2px);
+    transform: translateY(4px);
     box-shadow: 0 1px 6px rgba(60, 64, 67, .3);
 }
 header .education-header .inner .eduCon .eduInner .education .icon 
@@ -652,4 +658,90 @@ header .education-header .inner .eduCon .eduInner .education .year
     font-weight: 400;
     color: rgb(80, 80, 80);
     pointer-events: none;
+}
+
+
+
+
+
+
+.expInner 
+{
+    width: 85%;
+}
+.expInner .company
+{
+    width: 100%;
+}
+.expInner .company .experience 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.expInner .company .experience h2 
+{
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 30px;
+}
+/* .expInner .company .experience h2::before
+{
+    content: '\ea40';
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: .5px solid black;
+    fill: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.expInner .company .experience .block 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 40px;
+}
+.expInner .company .experience .block::before
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+}
+.expInner .company .experience .block::after
+{
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -26px;
+    width: 2px;
+    height: 30px;
+    background: black;
+}
+.expInner .company .experience .block span 
+{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.expInner .company .experience .block label 
+{
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+}
+.expInner .company .experience .block p 
+{
+    font-size: 16px;
+    margin-top: 25px;
 }
