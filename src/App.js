@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Loader from './components/Loader';
 import Education from './pages/Education';
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function App(){
 
