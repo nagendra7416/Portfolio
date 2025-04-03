@@ -1,9 +1,18 @@
 import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import LoadingBar from "react-top-loading-bar";
+import { useEffect, useState } from "react";
 
 export default function Home(){
+    const [isloading, setIsLoading] = useState(true);
+    
+    useEffect(() => {
+        setIsLoading(false);
+    })
+
     return (
         <>
+            <LoadingBar color="#f00" height={1.5} progress={isloading ? 90:100} />
             <Navbar />
 
             <header className="header">

@@ -44,7 +44,7 @@ export default function Navbar(){
                                     <NavLink to='/education'>Education</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/'>Experience</NavLink>
+                                    <NavLink to='/experience'>Experience</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to='/'>Projects</NavLink>
@@ -75,7 +75,7 @@ export default function Navbar(){
                             <NavLink to='/education'>Education</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/'>Experience</NavLink>
+                            <NavLink to='/experience'>Experience</NavLink>
                         </li>
                         <li>
                             <NavLink to='/'>Projects</NavLink>

@@ -584,6 +584,10 @@ header .education-header .inner .headCon
 {
     width: 100%;
 }
+header .education-header .inner .eduCon
+{
+    padding-bottom: 20px;
+}
 header .education-header .inner .eduCon .eduInner
 {
     width: 100%;

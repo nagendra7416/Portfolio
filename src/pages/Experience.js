@@ -1,10 +1,10 @@
-import LoadingBar from "react-top-loading-bar";
-import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
+import LoadingBar from "react-top-loading-bar";
 
-export default function Education(){
+export default function Experience(){
     const [isloading, setIsLoading] = useState(true);
-
+    
     useEffect(() => {
         setIsLoading(false);
     })
@@ -18,11 +18,11 @@ export default function Education(){
                 <div className="education-header">
                     <div className="inner">
                         <div className="head">
-                            <h2>My Education</h2>
-                            <label>Steps towards the career</label>
+                            <h2>My Experience</h2>
+                            <label>Professional Work Experience</label>
                         </div>
 
-                        <div className="eduCon">
+                        {/* <div className="eduCon">
                             <div className="eduInner">
                                 <div className="education">
                                     <div className="icon">
@@ -49,7 +49,7 @@ export default function Education(){
                                     <div className="year">2014-2015</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </header>
