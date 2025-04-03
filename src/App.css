@@ -29,6 +29,13 @@ nav
     height: 70px;
     background: transparent;
     /* box-shadow: 0 1px 6px rgba(60, 64, 67, .3); */
+    transition: .3s;
+    z-index: 1000;
+}
+nav.active 
+{
+    transition: .3s;
+    background: white;
 }
 nav .inner 
 {

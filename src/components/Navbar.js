@@ -13,6 +13,15 @@ export default function Navbar(){
         menu.classList.remove('active');
     }
 
+    window.addEventListener('scroll', function(){
+        const navbar = this.document.querySelector('.nav');
+        if(this.window.scrollY > 40){
+            navbar.classList.add('active');
+        } else {
+            navbar.classList.remove('active');
+        }
+    })
+
     useEffect(() => {
 
     }, [])
